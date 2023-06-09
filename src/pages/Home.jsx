@@ -4,8 +4,8 @@ const Home = () => {
         <h1> THE MISTER LEAGUE</h1>
         <p>La mejor liga del mundo</p>
        </div>
-      <div className="commingSoon">
-        <h2>Comming Soon</h2>
+      <div className="comingSoon">
+        <h2>Coming Soon</h2>
       </div>
     </div>;
   };
