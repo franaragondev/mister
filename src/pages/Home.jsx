@@ -1,13 +1,25 @@
+import React from 'react';
+import Axios from 'axios';
+import ServerLink from '../ServerLink';
+import Header from '../components/Header';
+
 const Home = () => {
-    return <div className="pageBackground">
-      <div className="pageTitle">
-        <h1> THE MISTER LEAGUE</h1>
-        <p>La mejor liga del mundo</p>
-       </div>
+
+  const test = async () => {
+    Axios.get(`${ServerLink}/test`)
+        .then(response => {
+          console.log(response);
+        })
+  }
+
+    return (
+    <div className="pageBackground">
+      <Header/>
       <div className="comingSoon">
         <h2>Coming Soon</h2>
       </div>
-    </div>;
+    </div>
+    );
   };
   
   export default Home;
