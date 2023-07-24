@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { UserProvider } from './context/UserProvider';
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
@@ -6,7 +6,7 @@ import Home from './pages/Home';
 import Login from './pages/Login';
 
 const App = () => {
-  const [login, setLogin] = useState(false)
+
   return (
     <UserProvider>
       <Router>

@@ -6,12 +6,12 @@ const GeneralGastosClasification = ({teams}) => {
   return (
     <div className="informationTable">
       <h2>CLASIFICACIÓN GENERAL GASTOS</h2>
-      <div>
+      <div className="tableStyled">
         <div className="tableHeader">
           <div className="teamColumn">Equipo</div>
           <div className="moneyColumn">Gastos</div>
         </div>
-        <div>
+        <div className="tableBodyStyled">
           {sorting(teams, "moneySpent", 'desc')?.map((team, index) => {
             return (
               <div key={team.id}>

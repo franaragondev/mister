@@ -14,6 +14,15 @@ body {
   overflow-x: hidden;
 }
 
+.tableStyled {
+  border: 1px solid white;
+}
+
+.tableBodyStyled {
+  max-height: 22rem;
+  overflow: scroll;
+}
+
 .pageTitle {
   text-align: center;
   margin: 2rem;
@@ -41,7 +50,7 @@ body {
   cursor: pointer;
 }
 
-#inputPuntos{
+#inputPuntos {
   margin-left: 1rem;
 }
 
@@ -148,11 +157,11 @@ body {
   margin: 2rem;
 }
 
-.clasificacionAdmin{
+.clasificacionAdmin {
   margin-top: 3rem;
 }
 
-.enviarButton{
+.enviarButton {
   margin-top: 2rem;
   cursor: pointer;
   background: #FFFFFF;
@@ -166,7 +175,7 @@ body {
   text-align: center;
 }
 
-.teamsAdmin{
+.teamsAdmin {
   margin-bottom: 1rem;
 }
 
@@ -174,7 +183,7 @@ body {
   margin-top: 4rem;
 }
 
-.buttonContainer>button{
+.buttonContainer>button {
   margin: 1rem;
   margin-top: 2rem;
   margin-bottom: 0;

@@ -59,13 +59,13 @@ const JornadasClasification = () => {
           })}
         </select>
       </div>
-      <div>
+      <div className="tableStyled">
         <div className="tableHeader">
           <div className="teamColumn">Puesto</div>
           <div className="moneyColumn">Equipo</div>
         </div>
         {weeklyClasification.length ? (
-          <div>
+          <div className="tableBodyStyled">
             {/* POSITION 7 */}
             <div key={7}>
               <div className="tableBody">

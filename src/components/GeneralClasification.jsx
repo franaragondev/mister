@@ -5,13 +5,13 @@ const GeneralClasification = ({ teams }) => {
   return (
     <div className="informationTable">
       <h2>CLASIFICACIÓN GENERAL</h2>
-      <div>
+      <div className="tableStyled">
         <div className="tableHeader">
           <div className="teamColumn">Posición</div>
           <div className="moneyColumn">Equipo</div>
           <div className="moneyColumn">Puntos</div>
         </div>
-        <div>
+        <div className="tableBodyStyled">
           {sorting(teams, "points", "desc")?.map((team, index) => {
             return (
               <div key={team.id}>
