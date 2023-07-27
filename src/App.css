@@ -116,14 +116,14 @@ body {
   border: 1px solid white;
 }
 
-.teamColumn {
+.positionColumn {
   width: 30vw !important;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.moneyColumn {
+.moneyColumn, .nameColumn, .pointColumn {
   width: 70vw !important;
 }
 
@@ -296,4 +296,91 @@ body {
 
 .opcionUsuarioLink {
   text-decoration: none;
+}
+
+@media (max-width: 1354px) {
+
+  body {
+    border: 3px solid blue;
+    width: 99vw;
+  }
+
+  .pageTitle{
+    margin: 1.5rem .5rem;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tableContainer {
+    width: 99vw;
+    margin-bottom: -1.8rem;
+  }
+
+  .informationTable {
+    width: auto !important;
+    margin-top: 1rem !important;
+  }
+
+  .tableStyled {
+    height: 26rem !important;
+    width: 90vw !important;
+  }
+
+  .tableBodyStyled {
+    max-height: 23.8rem !important;
+  }
+
+  .nameColumn>div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+
+  }
+
+  .nameColumn>div {
+    margin-left: 1.5rem;
+  }
+
+  .nameColumn>div>span:nth-child(1) {
+    margin-bottom: .5rem;
+  }
+
+  .pointColumn {
+    display: none !important;
+  }
+
+  .moneyColumn {
+    display: flex;
+    justify-content: center;
+  }
+
+  .teamsAdmin{
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+  }
+
+  .teamsAdmin>span, .teamsAdmin>select{
+    margin: .5rem;
+  }
+
+  .teamsAdmin>input{
+    margin-left: .5rem !important;
+    width: 13.5rem !important;
+  }
+
+  .pageFooter {
+    position: relative;
+    width: 99vw;
+  }
+}
+
+@media (min-width: 1354px) {
+  .nameColumn>div>span:nth-child(2) {
+    display: none;
+  }
 }

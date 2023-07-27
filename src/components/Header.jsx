@@ -21,20 +21,29 @@ const Header = () => {
         <p>La mejor liga del mundo</p>
       </div>
       <div>
-        <img
-          onClick={() => redirect("login")}
-          id="userIcon"
-          src={userIcon}
-          alt="user icon"
-        />{" "}
-        {localStorage.getItem("user") && (
-          <img
-            onClick={() => handleIcon()}
-            id="userIcon"
-            src={logout}
-            alt="user icon"
-          />
+        {window.location.href.split("/")[
+          window.location.href.split("/").length - 1
+        ] !== "login" && (
+          <>
+            <img
+              onClick={() => redirect("login")}
+              id="userIcon"
+              src={userIcon}
+              alt="user icon"
+            />{" "}
+          </>
         )}
+        {localStorage.getItem("user") &&
+          window.location.href.split("/")[
+            window.location.href.split("/").length - 1
+          ] === "login" && (
+            <img
+              onClick={() => handleIcon()}
+              id="userIcon"
+              src={logout}
+              alt="user icon"
+            />
+          )}
       </div>
     </div>
   );

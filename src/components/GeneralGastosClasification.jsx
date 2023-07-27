@@ -8,16 +8,16 @@ const GeneralGastosClasification = ({teams}) => {
       <h2>CLASIFICACIÓN GENERAL GASTOS</h2>
       <div className="tableStyled">
         <div className="tableHeader">
-          <div className="teamColumn">Equipo</div>
-          <div className="moneyColumn">Gastos</div>
+          <div className="moneyColumn">Equipo</div>
+          <div className="positionColumn">Gastos</div>
         </div>
         <div className="tableBodyStyled">
           {sorting(teams, "moneySpent", 'desc')?.map((team, index) => {
             return (
               <div key={team.id}>
                 <div className="tableBody">
-                  <div className="teamColumn">{team?.name} {index === 0 &&  <img className="dollarKing" src={dollarKing} alt="team icon" />}</div>
-                  <div className="moneyColumn">{team?.moneySpent}€</div>
+                  <div className="moneyColumn">{team?.name} {index === 0 &&  <img className="dollarKing" src={dollarKing} alt="team icon" />}</div>
+                  <div className="positionColumn">{team?.moneySpent}€</div>
                 </div>
               </div>
             );

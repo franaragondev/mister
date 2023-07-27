@@ -61,37 +61,37 @@ const JornadasClasification = () => {
       </div>
       <div className="tableStyled">
         <div className="tableHeader">
-          <div className="teamColumn">Puesto</div>
-          <div className="moneyColumn">Equipo</div>
+          <div className="nameColumn">Equipo</div>
+          <div className="positionColumn">Gastos</div>
         </div>
         {weeklyClasification.length ? (
           <div className="tableBodyStyled">
             {/* POSITION 7 */}
             <div key={7}>
               <div className="tableBody">
-                <div className="teamColumn">{position5[0]?.name}</div>
-                <div className="moneyColumn">{gastosPosicion5}€</div>
+                <div className="nameColumn">{position5[0]?.name}</div>
+                <div className="positionColumn">{gastosPosicion5}€</div>
               </div>
             </div>
             {/* POSITION 8 */}
             <div key={8}>
               <div className="tableBody">
-                <div className="teamColumn">{position6[0]?.name}</div>
-                <div className="moneyColumn">{gastosPosicion6}€</div>
+                <div className="nameColumn">{position6[0]?.name}</div>
+                <div className="positionColumn">{gastosPosicion6}€</div>
               </div>
             </div>
             {/* POSITION 9 */}
             <div key={9}>
               <div className="tableBody">
-                <div className="teamColumn">{position7[0]?.name}</div>
-                <div className="moneyColumn">{gastosPosicion7}€</div>
+                <div className="nameColumn">{position7[0]?.name}</div>
+                <div className="positionColumn">{gastosPosicion7}€</div>
               </div>
             </div>
             {/* POSITION 10 */}
             <div key={10}>
               <div className="tableBody">
-                <div className="teamColumn">{position8[0]?.name}</div>
-                <div className="moneyColumn">{gastosPosicion8}€</div>
+                <div className="nameColumn">{position8[0]?.name}</div>
+                <div className="positionColumn">{gastosPosicion8}€</div>
               </div>
             </div>
           </div>
