@@ -301,7 +301,6 @@ body {
 @media (max-width: 1354px) {
 
   body {
-    border: 3px solid blue;
     width: 99vw;
   }
 
@@ -331,7 +330,7 @@ body {
   }
 
   .tableBodyStyled {
-    max-height: 23.8rem !important;
+    max-height: 23.7rem !important;
   }
 
   .nameColumn>div {
