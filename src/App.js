@@ -1,20 +1,26 @@
 import React from 'react';
 import { UserProvider } from './context/UserProvider';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
 import Home from './pages/Home';
 import Login from './pages/Login';
+import Team from './pages/Team';
 
 const App = () => {
 
   return (
     <UserProvider>
-      <Router>
-        <Switch>
-          <Route path='/' exact component={Home} />
-          <Route path='/Login' exact component={Login} />
-        </Switch>
-      </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+          <Route path='/Login' exact element={<Login />} />
+          <Route path='/Team/:id' exact element={<Team />} />
+        </Routes>
+      </BrowserRouter>
     </UserProvider>
   )
 }

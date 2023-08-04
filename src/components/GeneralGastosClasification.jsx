@@ -16,7 +16,7 @@ const GeneralGastosClasification = ({teams}) => {
             return (
               <div key={team.id}>
                 <div className="tableBody">
-                  <div className="moneyColumn">{team?.name} {index === 0 &&  <img className="dollarKing" src={dollarKing} alt="team icon" />}</div>
+                  <div className="teamNameCursor" onClick={() => window.location.href = `/Team/${team?.id}`} className="moneyColumn">{team?.name} {index === 0 &&  <img className="dollarKing" src={dollarKing} alt="team icon" />}</div>
                   <div className="positionColumn">{team?.moneySpent}€</div>
                 </div>
               </div>

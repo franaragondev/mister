@@ -298,13 +298,45 @@ body {
   text-decoration: none;
 }
 
+.teamPage {
+  margin-top: -2rem;
+  height: 70vh;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageEscudo {
+  width: 15rem;
+}
+
+.teamData{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.teamData>p{
+  margin-top: 0;
+  text-align: center;
+}
+
+.messageTeamPage{
+  font-style: italic;
+}
+
+.teamNameCursor{
+  cursor: pointer;
+}
+
 @media (max-width: 1354px) {
 
   body {
     width: 99vw;
   }
 
-  .pageTitle{
+  .pageTitle {
     margin: 1.5rem .5rem;
   }
 
@@ -357,17 +389,17 @@ body {
     justify-content: center;
   }
 
-  .teamsAdmin{
+  .teamsAdmin {
     display: flex;
     flex-direction: column;
     width: 15rem;
   }
 
-  .teamsAdmin>span, .teamsAdmin>select{
+  .teamsAdmin>span, .teamsAdmin>select {
     margin: .5rem;
   }
 
-  .teamsAdmin>input{
+  .teamsAdmin>input {
     margin-left: .5rem !important;
     width: 13.5rem !important;
   }

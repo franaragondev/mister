@@ -69,28 +69,28 @@ const JornadasClasification = () => {
             {/* POSITION 7 */}
             <div key={7}>
               <div className="tableBody">
-                <div className="nameColumn">{position5[0]?.name}</div>
+                <div className="teamNameCursor" onClick={() => window.location.href = `/Team/${position5[0]?.id}`} className="nameColumn">{position5[0]?.name}</div>
                 <div className="positionColumn">{gastosPosicion5}€</div>
               </div>
             </div>
             {/* POSITION 8 */}
             <div key={8}>
               <div className="tableBody">
-                <div className="nameColumn">{position6[0]?.name}</div>
+                <div className="teamNameCursor" onClick={() => window.location.href = `/Team/${position6[0]?.id}`} className="nameColumn">{position6[0]?.name}</div>
                 <div className="positionColumn">{gastosPosicion6}€</div>
               </div>
             </div>
             {/* POSITION 9 */}
             <div key={9}>
               <div className="tableBody">
-                <div className="nameColumn">{position7[0]?.name}</div>
+                <div className="teamNameCursor" onClick={() => window.location.href = `/Team/${position7[0]?.id}`} className="nameColumn">{position7[0]?.name}</div>
                 <div className="positionColumn">{gastosPosicion7}€</div>
               </div>
             </div>
             {/* POSITION 10 */}
             <div key={10}>
               <div className="tableBody">
-                <div className="nameColumn">{position8[0]?.name}</div>
+                <div className="teamNameCursor" onClick={() => window.location.href = `/Team/${position8[0]?.id}`} className="nameColumn">{position8[0]?.name}</div>
                 <div className="positionColumn">{gastosPosicion8}€</div>
               </div>
             </div>

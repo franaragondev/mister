@@ -19,7 +19,7 @@ const GeneralClasification = ({ teams }) => {
                   <div className="positionColumn">{index + 1}</div>
                   <div className="nameColumn">
                     <div>
-                      <span>{team?.name}</span>
+                      <span className="teamNameCursor" onClick={() => window.location.href = `/Team/${team?.id}`}>{team?.name}</span>
                       <span>{team?.points} puntos</span>
                     </div>
                   </div>
