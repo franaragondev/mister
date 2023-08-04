@@ -36,10 +36,23 @@ const Home = () => {
     <div className="pageBackground">
       <Header />
       <div className="tableContainer">
+        {/* <div className="selectContainer">
+          <select onChange={(value) => setShowTable(value.target.value)}>
+            <option value="0" selected>
+              Clasificación Liga
+            </option>
+            <option value="1">Clasificación General Gastos</option>
+            <option value="2">Clasificación Semanal Gastos</option>
+          </select>
+        </div> */}
         <div className="buttonContainer">
           <button onClick={() => setShowTable(0)}>Clasificación Liga</button>
-          <button onClick={() => setShowTable(1)}>Clasificación General Gastos</button>
-          <button onClick={() => setShowTable(2)}>Clasificación Semanal Gastos</button>
+          <button onClick={() => setShowTable(1)}>
+            Clasificación General Gastos
+          </button>
+          <button onClick={() => setShowTable(2)}>
+            Clasificación Semanal Gastos
+          </button>
         </div>
         {showData()}
       </div>

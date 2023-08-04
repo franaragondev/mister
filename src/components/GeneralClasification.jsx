@@ -23,7 +23,7 @@ const GeneralClasification = ({ teams }) => {
                       <span>{team?.points} puntos</span>
                     </div>
                   </div>
-                  <div className="pointColumn">{team?.points}</div>
+                  <div className="pointColumn">{team?.points} puntos</div>
                 </div>
               </div>
             );
