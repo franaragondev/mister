@@ -99,7 +99,8 @@ const Team = () => {
           if (teamClasification?.id === Number(routeParams["id"])) {
             return (
               <div className="teamData">
-                <h2>{team[0]?.name} - {index+1}º puesto</h2>
+                <h2>{team[0]?.name}</h2>
+                <h3>{index+1}º puesto</h3>
                 <p>
                   {team[0]?.points} puntos | {team[0]?.moneySpent}€ invertidos
                   en la liga

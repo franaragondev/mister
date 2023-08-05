@@ -300,7 +300,7 @@ body {
 
 .teamPage {
   margin-top: -2rem;
-  height: 70vh;
+  height: 65vh;
   padding: 1rem;
   display: flex;
   flex-direction: column;
@@ -316,6 +316,10 @@ body {
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+
+.teamData>h3{
+  margin-top: -.5rem;
 }
 
 .teamData>p{
