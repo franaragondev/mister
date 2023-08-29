@@ -367,12 +367,12 @@ body {
   }
 
   .tableStyled {
-    height: 37.3rem !important;
+    height: 67vh !important;
     width: 90vw !important;
   }
 
   .tableBodyStyled {
-    max-height: 35rem !important;
+    max-height: 62vh !important;
   }
 
   .nameColumn>div {
