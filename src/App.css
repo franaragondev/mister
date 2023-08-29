@@ -19,7 +19,7 @@ body {
 }
 
 .tableBodyStyled {
-  max-height: 22rem;
+  max-height: 26rem;
   overflow: scroll;
 }
 
@@ -85,6 +85,11 @@ body {
   margin-top: 15rem;
   font-style: italic;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.selectContainer{
+  padding-top: .5rem;
+  margin-bottom: -1rem;
 }
 
 .tableContainer {
@@ -311,27 +316,27 @@ body {
   width: 15rem;
 }
 
-.teamData{
+.teamData {
   display: flex;
   align-items: center;
   flex-direction: column;
   text-align: center;
 }
 
-.teamData>h3{
+.teamData>h3 {
   margin-top: -.5rem;
 }
 
-.teamData>p{
+.teamData>p {
   margin-top: 0;
   text-align: center;
 }
 
-.messageTeamPage{
+.messageTeamPage {
   font-style: italic;
 }
 
-.teamNameCursor{
+.teamNameCursor {
   cursor: pointer;
 }
 
@@ -362,12 +367,12 @@ body {
   }
 
   .tableStyled {
-    height: 26rem !important;
+    height: 37.3rem !important;
     width: 90vw !important;
   }
 
   .tableBodyStyled {
-    max-height: 23.7rem !important;
+    max-height: 35rem !important;
   }
 
   .nameColumn>div {
@@ -410,7 +415,7 @@ body {
   }
 
   .pageFooter {
-    position: relative;
+    /* position: relative; */
     width: 99vw;
   }
 }

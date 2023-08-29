@@ -21,13 +21,21 @@ const Home = () => {
     fetchData();
   }, []);
 
+  useEffect(() => {
+    showData();
+  }, [showTable]);
+
   const showData = () => {
-    switch (showTable) {
+    let tableNumber = showTable
+    switch (Number(tableNumber)) {
       case 1:
+        console.log('1', tableNumber);
         return <GeneralGastosClasification teams={generalClasification} />;
       case 2:
+        console.log('2', tableNumber);
         return <JornadasClasification />;
       default:
+        console.log('0', tableNumber);
         return <GeneralClasification teams={generalClasification} />;
     }
   };
@@ -36,7 +44,7 @@ const Home = () => {
     <div className="pageBackground">
       <Header />
       <div className="tableContainer">
-        {/* <div className="selectContainer">
+        <div className="selectContainer">
           <select onChange={(value) => setShowTable(value.target.value)}>
             <option value="0" selected>
               Clasificación Liga
@@ -44,8 +52,8 @@ const Home = () => {
             <option value="1">Clasificación General Gastos</option>
             <option value="2">Clasificación Semanal Gastos</option>
           </select>
-        </div> */}
-        <div className="buttonContainer">
+        </div>
+        {/* <div className="buttonContainer">
           <button onClick={() => setShowTable(0)}>Clasificación Liga</button>
           <button onClick={() => setShowTable(1)}>
             Clasificación General Gastos
@@ -53,7 +61,7 @@ const Home = () => {
           <button onClick={() => setShowTable(2)}>
             Clasificación Semanal Gastos
           </button>
-        </div>
+        </div> */}
         {showData()}
       </div>
       <Footer />
