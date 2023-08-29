@@ -89,7 +89,7 @@ body {
 
 .selectContainer{
   padding-top: .5rem;
-  margin-bottom: -1rem;
+  margin-bottom: -2rem;
 }
 
 .tableContainer {
@@ -367,12 +367,21 @@ body {
   }
 
   .tableStyled {
-    height: 67vh !important;
+    height: 30.3rem !important;
+    width: 90vw !important;
+  }
+
+  .tableStyledGASTOS {
+    height: 30.3rem !important;
     width: 90vw !important;
   }
 
   .tableBodyStyled {
-    max-height: 62vh !important;
+    max-height: 28rem !important;
+  }
+
+  .tableBodyStyledGASTOS {
+    max-height: 25rem !important;
   }
 
   .nameColumn>div {

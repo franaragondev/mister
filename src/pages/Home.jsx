@@ -26,16 +26,12 @@ const Home = () => {
   }, [showTable]);
 
   const showData = () => {
-    let tableNumber = showTable
-    switch (Number(tableNumber)) {
+    switch (Number(showTable)) {
       case 1:
-        console.log('1', tableNumber);
         return <GeneralGastosClasification teams={generalClasification} />;
       case 2:
-        console.log('2', tableNumber);
         return <JornadasClasification />;
       default:
-        console.log('0', tableNumber);
         return <GeneralClasification teams={generalClasification} />;
     }
   };
